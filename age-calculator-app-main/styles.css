@@ -1,0 +1,44 @@
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(236, 236, 236);
+    padding: 5vh 5vw;
+
+}
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+main{
+    padding: 5vh 5vw;
+    background-color: rgb(245, 245, 245);
+    border-radius: 1rem 1rem 7rem 1rem;
+}
+#inputSection{
+
+}
+
+
+
+#submit{
+    background-image: url('assets/images/icon-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 10vw;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 3rem;
+    background-color:  hsl(259, 100%, 65%);;
+}
+#submit:hover{
+    background-color: hsl(0, 0%, 8%);
+}
+#resultSection{
+    font-size: 10vw;
+    font-weight: 800;
+}
+
+.allResults{
+    color: hsl(259, 100%, 65%);
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">  
+  <title>Frontend Mentor | Age calculator app</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<main>
+<section id="inputSection">
+  <form id="Dates">
+
+    <label for="days" class="nameLabel">Days</label>
+    <input id="days" name="days" type="number" placeholder="DD" required>
+
+    <label for="months" class="nameLabel">Month</label>
+    <input id="months" name="months" type="number" placeholder="MM" required>
+
+    <label for="years" class="nameLabel">Years</label>
+    <input id="years" name="years" type="number" placeholder="YYYY" min="1000" required>
+    <input type="submit" id="submit" value="">
+  </form>
+</section> 
+<section id="resultSection">
+  <span id="yearResult" class="allResults">--</span><span> years</span><br> 
+  <span id="monthResult"class="allResults">--</span><span> months</span><br>
+  <span id="dayResult"class="allResults">--</span><span> days</span> 
+</section>
+</main>
+</body>
+</html>
