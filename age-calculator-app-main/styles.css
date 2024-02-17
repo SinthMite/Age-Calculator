@@ -1,44 +1,103 @@
-body{
+body {
     font-family: "Poppins", sans-serif;
     background-color: rgb(236, 236, 236);
     padding: 5vh 5vw;
-
-}
-*{
     margin: 0;
-    padding: 0%;
+}
+
+* {
     box-sizing: border-box;
 }
 
-main{
+main {
     padding: 5vh 5vw;
     background-color: rgb(245, 245, 245);
     border-radius: 1rem 1rem 7rem 1rem;
 }
-#inputSection{
-
+.nameLabel{
+    font-size: 3vw;
+    font-weight: 600;
+    color: hsl(0, 1%, 44%);
+}
+#inputSection {
+    padding-bottom: 5vh;
+    border-bottom: 1px solid hsl(0, 0%, 8%);
+    position: relative; /* Make #inputSection a positioning context */
 }
 
+#inputSection form {
+    display: flex;
+    flex-wrap: wrap; /* Allow the items to wrap to the next line if needed */
+    gap: 10px; /* Adjust the gap between items */
+}
 
+.numberInput {
+    border: 1.4px solid hsla(0, 0%, 8%, 0.2);
+    border-radius: 5px;
+    padding: 2vh 1vw;
+    max-width: 15vw;
+    font-size: 4vw;
+    font-weight: 800;
+    color: hsl(0, 1%, 44%);
+    text-align: center;
+}
 
-#submit{
+.times {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allow the sections to take up all available space */
+}
+
+#submit {
     background-image: url('assets/images/icon-arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
-    min-width: 10vw;
-    aspect-ratio: 1;
+    aspect-ratio: 1/1;
     border: none;
-    border-radius: 3rem;
-    background-color:  hsl(259, 100%, 65%);;
+    border-radius: 50%;
+    background-color: hsl(259, 100%, 65%);
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: left, background-color;
+    transition-duration: 1s;
 }
-#submit:hover{
+
+#submit:hover {
     background-color: hsl(0, 0%, 8%);
 }
-#resultSection{
+#submit:active{
+    left: 100%;
+}
+#resultSection {
+    padding-top: 3rem;
     font-size: 10vw;
     font-weight: 800;
 }
 
-.allResults{
+.allResults {
     color: hsl(259, 100%, 65%);
+}
+
+@media screen and (min-width: 320px){
+    #submit{
+        width: 60px;
+    }
+}
+@media screen and (max-width: 1024px){
+    #submit{
+        width: 8vh;
+    }
+}
+@media screen and (min-width: 1025px){
+    #submit{
+        width: 150px;
+    }
+}
+@media screen and (min-width: 1025px){
+    #submit{
+        width: 8vh;
+
+}
 }
