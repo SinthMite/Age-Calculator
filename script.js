@@ -50,7 +50,7 @@ class yourDate {
             calculatedMonth = Math.abs(calculatedMonth);
 
         if (this._wantedDay > 0 && this._wantedDay <= 31) {
-            calculatedDay = currentDay - this._wantedDay;
+            calculatedDay = Math.abs(currentDay - this._wantedDay);
         }
         return {
             calculatedYear,
